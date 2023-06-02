@@ -1,5 +1,10 @@
 package org.example;
 
+import org.example.Domen.Person;
+import org.example.Domen.Student;
+import org.example.Domen.StudentGroup;
+import org.example.Domen.StudentSteam;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

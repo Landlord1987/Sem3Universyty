@@ -1,6 +1,8 @@
-package org.example;
+package org.example.Domen;
 
-public class Teacher extends Person{
+import org.example.Domen.Person;
+
+public class Teacher extends Person {
     private String acadDegree;
     public Teacher(String firstName, String secondName, int age, String acadDegree) {
         super(firstName, secondName, age);

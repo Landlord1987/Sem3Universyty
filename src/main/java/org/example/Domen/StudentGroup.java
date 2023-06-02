@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Domen;
 
 import java.util.Iterator;
 import java.util.List;

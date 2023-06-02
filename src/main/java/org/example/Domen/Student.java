@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Domen;
 
 /**
  * Класс студентов, наследует класс Person имплементирует интерфейс Comparable для сортировки студентов по возрасту

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Domen;
 
 public class Person {
     private String firstName;

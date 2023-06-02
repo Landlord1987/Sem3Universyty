@@ -1,7 +1,7 @@
-package org.example;
+package org.example.Domen;
 
-import java.util.Collections;
-import java.util.Comparator;
+import org.example.Domen.StudentGroup;
+
 import java.util.Iterator;
 import java.util.List;
 
