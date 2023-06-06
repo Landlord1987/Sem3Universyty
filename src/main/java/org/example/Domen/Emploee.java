@@ -4,6 +4,7 @@ package org.example.Domen;
  * Работники Института, наследуется от класса Person
  */
 public class Emploee extends Person {
+
     private String special;
 
     public Emploee(String firstName, String secondName, int age, String special) {

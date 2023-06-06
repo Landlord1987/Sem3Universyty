@@ -1,6 +1,7 @@
 package org.example.Domen;
 
 public class Person {
+
     private String firstName;
     private String secondName;
     private int age;

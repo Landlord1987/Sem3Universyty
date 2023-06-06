@@ -5,7 +5,7 @@ package org.example.Domen;
  */
 public class Student extends Person implements Comparable<Student> {
 
-    private int id;
+    static private int id;
 
     public Student(String firstName, String secondName, int age, int id) {
         super(firstName, secondName, age);
@@ -22,11 +22,15 @@ public class Student extends Person implements Comparable<Student> {
 
     @Override
     public int compareTo(Student o) {
-        if (o.getAge() > this.getAge()) {
+        if (o.getAge() == this.getAge()) {
+            if(this.getId() == o.getId()) {
+                return 0;
+            } else if (this.getId() < o.getId()) {
+                return -1;
+            } else return 1;
+        } else if (o.getAge() > this.getAge()) {
             return -1;
-        } else if (o.getAge() < this.getAge()) {
-            return 1;
-        } else return 0;
+        } else return 1;
     }
 }
 

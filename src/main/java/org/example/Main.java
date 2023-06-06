@@ -1,9 +1,8 @@
 package org.example;
 
-import org.example.Domen.Person;
-import org.example.Domen.Student;
-import org.example.Domen.StudentGroup;
-import org.example.Domen.StudentSteam;
+import org.example.Controller.EmploeeController;
+import org.example.Controller.TeacherController;
+import org.example.Domen.*;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -92,6 +91,28 @@ public class Main {
         for (StudentGroup studentGroup: studentGroups) {
             System.out.println(studentGroup.toString());
         }
+        Emploee per1 = new Emploee("Вика", "Криницына", 8, "basic");
+        Teacher tech1 = new Teacher("Снежана", "Денисова", 32);
+        Teacher tech2 = new Teacher("Александр", "Иванов", 46);
+
+
+        EmploeeController empContr = new EmploeeController();
+        empContr.paySalary(per1);
+// Создаем экземпляр TeacherController
+        TeacherController techContr = new TeacherController();
+// Выплачиваем зарплату специалисту через Контроллер
+        techContr.paySalary(tech1);
+// Выводим Имя учителя
+        techContr.printFirstName(tech1);
+// Изменяем имя учителя
+        techContr.setFirstName(tech1, "Татьяна");
+// Выводим имя учителя
+        techContr.printFirstName(tech1);
+// Создаем учителя через контроллер
+        techContr.create("Снежана", "Денисова", 32);
+        techContr.create("Александр", "Иванов", 46);
+// Печатаем лист учителей через контроллер
+        techContr.viewListTeacher();
     }
 
 }

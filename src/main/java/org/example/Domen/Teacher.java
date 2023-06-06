@@ -1,12 +1,17 @@
 package org.example.Domen;
 
-import org.example.Domen.Person;
-
 public class Teacher extends Person {
+    static private int id;
     private String acadDegree;
-    public Teacher(String firstName, String secondName, int age, String acadDegree) {
+
+    public static int getId() {
+        return id;
+    }
+
+    public Teacher(String firstName, String secondName, int age) {
         super(firstName, secondName, age);
         this.acadDegree = acadDegree;
+        id++;
     }
 
     public String getAcadDegree() {
